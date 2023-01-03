@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- font awesome -->
+        <!-- link taken from font awesome cdn, icon from font awesome icons. "x" icon  -->
+        <link
+            rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        />
+
+        <!-- google fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+            rel="stylesheet"
+        />
+
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+    <!-- header buttons -->
+    <!-- these should be <section> rather than <div> -->
+    <section class="header"> 
+        <div class="headerContainer">
+            <!-- nav is to navigate around the page -->
+            <nav>
+                <div class="logoContainer"> 
+                    <p class="portfolioLogo">Flash Cards</p>
+                </div>
+                <ul>
+                    <!-- # makes the list element clickable -->
+                    <li><a href="#" id="homeNavigation">Home</a></li> 
+                    <li><a href="#" id="quizNavigation">Quiz</a></li> 
+                    <li><a href="#" id="gridNavigation">Card Grid</a></li> 
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- form to input and sumbit cards -->
+    <form id="projectForm">
+        <div>
+            <!-- div makes the elements appear on seperate lines -->
+            <!-- label allows you to click on the text in html page and select the box -->
+            <label for="projectName"> Project Name:</label>
+            <input type="text" id="projectName" placeholder="project name..." size=50 style="height: 50px;" required> 
+        </div> 
+
+        <br>
+        <!-- adds a line space between the elements -->
+        
+        <div>
+            <label for="projectText"> Project Text:</label>
+            <input type="text" id="projectText" placeholder="project description..." size=50 style="height: 50px;" required> 
+        </div>
+
+        <br>
+
+        <div>
+            <!-- premade html submit button -->
+            <input type="submit" id="submitButton">
+            <ul id="projectList"></ul>
+        </div>
+    </form>
+
+    <!-- quiz -->
+    <section class="display-cards" >
+        <div class="displayed-card">
+            <button id="display-card-button"> Display Card </button>
+            <div id="displaying-card">
+                <p id="card-name"></p>
+                <p id="card-text"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- container for the grid of cards -->
+    <section class="card-grid">
+        <div> 
+        </div>
+    </section>
+
+    <!-- script used -->
+    <script src="cardScript.js"></script>
+</body>
+</html>
