@@ -140,8 +140,8 @@ nav ul li a:hover::after {
 }
 #card-button-container {
     margin: auto;
-    width: 7vw;
-    /* need width for margin to dunction */
+    width: 5vw;
+    /* need width for margin to function */
 }
 #display-card-button {
     /* display: inline-block; */
